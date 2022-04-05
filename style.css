@@ -1,0 +1,181 @@
+/*Applying style on whole body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.contain{
+  width: 100%;
+  height:100%;
+  position: relative;
+  padding-bottom: 12vh;
+}
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+/* Navbar */
+nav {
+  background-color: gray;
+  color: white;
+  height:10vh;
+}
+form {
+  margin-right: 1em;
+}
+
+form input{
+  border-radius: 20px !important;
+  width: 250px !important;
+}
+
+nav li a{
+  color: white !important;
+}
+
+
+/* Main Image */
+.main-img {
+  height: 40vh;
+  background-image: url("assets/download2.jpg");
+  background-position: center;
+  background-size: auto;
+}
+
+/* Small menu icons */
+.menu-icons {
+  display: flex;
+  height: 1em;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.mIcons {
+  height: 100%;
+  width: 1em;
+  background-color: white;
+  margin: 0 2em;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.mIcons:nth-child(1) {
+  background-color: black;
+}
+
+/* About section */
+.about {
+  margin-top: 0.75em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: white;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.about--item {
+  background-color: rgb(90, 88, 88);
+  padding: 0.5em;
+}
+
+/* Info section */
+.info {
+  background-color: rgb(90, 88, 88);
+  display: flex;
+  margin: 0 1em;
+  gap: 1em;
+  padding: 1em;
+  color: white;
+}
+
+.info2 {
+  border-left: 1px dashed white;
+  margin-top: 2em;
+}
+
+footer {
+  /* margin-top: 0.5em; */
+  border-top: 2px solid grey;
+  /* margin-bottom: 1em; */
+  text-align: center;
+  color: rgb(90, 88, 88);
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+ol li{
+  margin: 1em;
+}
+
+/* Media query for small screens */
+
+@media (max-width: 575px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  form {
+    margin: 1em;
+  }
+
+  .collapse-fly {
+    position: absolute;
+    background: black none repeat scroll 0% 0%;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about--item {
+    padding: 1em;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  ol {
+    list-style:decimal-leading-zero;
+    padding-left: 1em;
+  }
+
+  .info2 {
+    border: none;
+    border-top: 2px dashed white;
+    padding-top: 0.5em;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  .footer {
+    border: none;
+    border-top: 2px solid grey;
+  }
+}
